@@ -33,7 +33,9 @@ function onImageClick(event) {
 
   // Modal window with simple ligthbox
   const lightbox = new SimpleLightbox(".gallery a", {
-    captionsData: "atl",
+    // captionType: text,
+    captionsData: 'alt',
+    captionPosition:'bottom',
     captionsDelay: 250,
   });
 }

@@ -23,13 +23,7 @@ console.log(galleryItem);
 
 gallery.insertAdjacentHTML("beforeend", galleryItem.join(""));
 
-gallery.addEventListener("click", onImageClick);
 
-function onImageClick(event) {
-  event.preventDefault();
-  if (event.target.nodeName !== "IMG") {
-    return;
-  }
 
   // Modal window with simple ligthbox
   const lightbox = new SimpleLightbox(".gallery a", {
@@ -38,4 +32,4 @@ function onImageClick(event) {
     captionPosition:'bottom',
     captionsDelay: 250,
   });
-}
+
